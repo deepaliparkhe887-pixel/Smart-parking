@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🚗 Smart Parking System</h1>
+        <p>Intelligent Parking Management Dashboard</p>
+    </header>
+
+    <main class="container">
+
+        <section class="summary">
+            <div class="card">
+                <h3>Total Slots</h3>
+                <p id="total">4</p>
+            </div>
+
+            <div class="card available">
+                <h3>Available</h3>
+                <p id="available">4</p>
+            </div>
+
+            <div class="card occupied">
+                <h3>Occupied</h3>
+                <p id="occupied">0</p>
+            </div>
+        </section>
+
+        <section class="parking-section">
+            <h2>Parking Area</h2>
+
+            <div class="parking-grid" id="parkingGrid"></div>
+
+            <div class="controls">
+                <label for="slotSelect">Select Parking Slot:</label>
+
+                <select id="slotSelect">
+                    <option value="0">Slot 1</option>
+                    <option value="1">Slot 2</option>
+                    <option value="2">Slot 3</option>
+                    <option value="3">Slot 4</option>
+                </select>
+
+                <button id="parkBtn">Park Vehicle</button>
+                <button id="removeBtn">Remove Vehicle</button>
+            </div>
+
+            <p id="message">Welcome to Smart Parking System!</p>
+        </section>
+
+        <section class="information">
+            <h2>System Information</h2>
+            <p>🟢 Green: Parking Slot Available</p>
+            <p>🔴 Red: Parking Slot Occupied</p>
+            <p>💻 Interface: HTML, CSS and JavaScript</p>
+            <p>⚙️ Hardware Logic: 8051 Assembly Language</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Smart Parking System | Mini Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+              </html>
